@@ -6,7 +6,7 @@ import re
 from botocore.exceptions import ClientError
 
 # Load configurations
-configs = yaml.load(open(r'D:\Workspace\Learning\llm\streamlit_bedrock\secrets.yaml', 'r'), Loader=yaml.FullLoader)
+configs = yaml.load(open(r'secrets.yaml', 'r'), Loader=yaml.FullLoader)
 
 # AWS credentials setup
 AWS_ACCESS_KEY = configs["AWS_ACCESS_KEY"]
